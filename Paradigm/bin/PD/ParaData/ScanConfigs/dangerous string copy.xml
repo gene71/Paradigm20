@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScanConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>dangerous string copy</Name>
+  <Type>INDICATOR</Type>
+  <Risk>Moderate</Risk>
+  <Description>It's just too easy to get code wrong that uses these outdated functions and these types of errors lead to vulnerabilities. Even some of the classic replacement functions are prone to error too.
+
+These functions can lead to buffer overruns (24 Deadly Sins of Software Development; Howard, LeBlanc, and Viega 2009). Existing code must either replace the banned function with a more secure version or be re-architected so that the banned function is not used.
+
+If unable to remove the function or use a more secure function then ensure the function arguments have been validated and thouroughly tested.</Description>
+  <Positive>false</Positive>
+  <Files />
+  <Patterns>
+    <string>strcpy</string>
+    <string>strcpyA</string>
+    <string>strcpyW</string>
+    <string>wcscpy</string>
+    <string>_tcscpy</string>
+    <string>_mbscpy</string>
+    <string>StrCpy</string>
+    <string>StrCpyA</string>
+    <string>StrCpyW</string>
+    <string>lstrcpy</string>
+    <string>lstrcpyA</string>
+    <string>lstrcpyW</string>
+    <string>_tccpy</string>
+    <string>_mbccpy</string>
+    <string>_ftcscpy</string>
+    <string>strncpy</string>
+    <string>wcsncpy</string>
+    <string>_tcsncpy</string>
+    <string>_mbsncpy</string>
+    <string>_mbsnbcpy</string>
+    <string>StrCpyN</string>
+    <string>StrCpyNA</string>
+    <string>StrCpyNW</string>
+    <string>StrNCpy</string>
+    <string>strcpynA</string>
+    <string>StrNCpyA</string>
+    <string>StrNCpyW</string>
+    <string>lstrcpyn</string>
+    <string>lstrcpynA</string>
+    <string>lstrcpynW</string>
+  </Patterns>
+  <FileExtensions>
+    <string>.cpp</string>
+    <string>.c</string>
+    <string>.C</string>
+    <string>.h</string>
+    <string>.H</string>
+  </FileExtensions>
+</ScanConfig>

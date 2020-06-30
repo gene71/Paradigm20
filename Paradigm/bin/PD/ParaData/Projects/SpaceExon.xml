@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ParadigmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>SpaceExon</Name>
+  <Description>This is a sample project used to test the report functions of Paradigm.</Description>
+  <ScanConfigs>
+    <ScanConfig>
+      <Name>linq</Name>
+      <Type>INFORMATIONAL</Type>
+      <Risk>Low</Risk>
+      <Description>test description for what to do if found</Description>
+      <Positive>false</Positive>
+      <Files />
+      <Patterns>
+        <string>join</string>
+        <string>select</string>
+      </Patterns>
+      <FileExtensions>
+        <string>.cs</string>
+      </FileExtensions>
+    </ScanConfig>
+    <ScanConfig>
+      <Name>String Concatenation</Name>
+      <Type>INDICATOR</Type>
+      <Risk>Moderate</Risk>
+      <Description />
+      <Positive>false</Positive>
+      <Files />
+      <Patterns>
+        <string>join</string>
+        <string>select</string>
+      </Patterns>
+      <FileExtensions>
+        <string>.cs</string>
+      </FileExtensions>
+    </ScanConfig>
+  </ScanConfigs>
+</ParadigmProject>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScanConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Prototype</Name>
+  <Type>INFORMATIONAL</Type>
+  <Risk>Low</Risk>
+  <Description>test</Description>
+  <Positive>false</Positive>
+  <Files />
+  <Patterns>
+    <string>resolve</string>
+  </Patterns>
+  <FileExtensions>
+    <string>.cs</string>
+    <string>.js</string>
+  </FileExtensions>
+</ScanConfig>

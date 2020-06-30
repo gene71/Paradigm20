@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ParadigmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>V4.1.K.0</Name>
+  <Description>RHEL code base scan to provide indicators of vulnerabilites.</Description>
+  <ScanConfigs>
+    <ScanConfig>
+      <Name>dangerous string concatenation</Name>
+      <Type>INDICATOR</Type>
+      <Risk>Moderate</Risk>
+      <Description>It's just too easy to get code wrong that uses these outdated functions and these types of errors lead to vulnerabilities. Even some of the classic replacement functions are prone to error too.
+
+These functions can lead to buffer overruns (24 Deadly Sins of Software Development; Howard, LeBlanc, and Viega 2009). Existing code must either replace the banned function with a more secure version or be re-architected so that the banned function is not used.
+
+If unable to remove the function or use a more secure function then ensure the function arguments have been validated and thouroughly tested.</Description>
+      <Positive>false</Positive>
+      <Files />
+      <Patterns>
+        <string>strcat</string>
+        <string>strcatA</string>
+        <string>strcatW</string>
+        <string>wcscat</string>
+        <string>_tcscat</string>
+        <string>_mbscat</string>
+        <string>StrCat</string>
+        <string>StrCatA</string>
+        <string>StrCatW</string>
+        <string>lstrcat</string>
+        <string>lstrcatA</string>
+        <string>lstrcatW</string>
+        <string>StrCatBuff</string>
+        <string>StrCatBuffA</string>
+        <string>StrCatBuffW</string>
+        <string>StrCatChainW</string>
+        <string>_tccat</string>
+        <string>_mbccat</string>
+        <string>_ftcscat</string>
+        <string>strncat</string>
+        <string>wcsncat</string>
+        <string>_tcsncat</string>
+        <string>_mbsncat</string>
+        <string>_mbsnbcat</string>
+        <string>StrCatN</string>
+        <string>StrCatNA</string>
+        <string>StrCatNW</string>
+        <string>StrNCat</string>
+        <string>StrNCatA</string>
+        <string>StrNCatW</string>
+        <string>lstrncat</string>
+        <string>lstrcatnA</string>
+        <string>lstrcatnW</string>
+        <string>lstrcatn</string>
+      </Patterns>
+      <FileExtensions>
+        <string>.c</string>
+        <string>.cpp</string>
+        <string>.C</string>
+        <string>.h</string>
+        <string>.H</string>
+      </FileExtensions>
+    </ScanConfig>
+    <ScanConfig>
+      <Name>dangerous string copy</Name>
+      <Type>INDICATOR</Type>
+      <Risk>Moderate</Risk>
+      <Description>It's just too easy to get code wrong that uses these outdated functions and these types of errors lead to vulnerabilities. Even some of the classic replacement functions are prone to error too.
+
+These functions can lead to buffer overruns (24 Deadly Sins of Software Development; Howard, LeBlanc, and Viega 2009). Existing code must either replace the banned function with a more secure version or be re-architected so that the banned function is not used.
+
+If unable to remove the function or use a more secure function then ensure the function arguments have been validated and thouroughly tested.</Description>
+      <Positive>false</Positive>
+      <Files />
+      <Patterns>
+        <string>strcpy</string>
+        <string>strcpyA</string>
+        <string>strcpyW</string>
+        <string>wcscpy</string>
+        <string>_tcscpy</string>
+        <string>_mbscpy</string>
+        <string>StrCpy</string>
+        <string>StrCpyA</string>
+        <string>StrCpyW</string>
+        <string>lstrcpy</string>
+        <string>lstrcpyA</string>
+        <string>lstrcpyW</string>
+        <string>_tccpy</string>
+        <string>_mbccpy</string>
+        <string>_ftcscpy</string>
+        <string>strncpy</string>
+        <string>wcsncpy</string>
+        <string>_tcsncpy</string>
+        <string>_mbsncpy</string>
+        <string>_mbsnbcpy</string>
+        <string>StrCpyN</string>
+        <string>StrCpyNA</string>
+        <string>StrCpyNW</string>
+        <string>StrNCpy</string>
+        <string>strcpynA</string>
+        <string>StrNCpyA</string>
+        <string>StrNCpyW</string>
+        <string>lstrcpyn</string>
+        <string>lstrcpynA</string>
+        <string>lstrcpynW</string>
+      </Patterns>
+      <FileExtensions>
+        <string>.cpp</string>
+        <string>.c</string>
+        <string>.C</string>
+        <string>.h</string>
+        <string>.H</string>
+      </FileExtensions>
+    </ScanConfig>
+    <ScanConfig>
+      <Name>catch all statements</Name>
+      <Type>CAT II</Type>
+      <Risk>Moderate</Risk>
+      <Description>catch blocks that use a catch all syntax are typically associated with empty actions.  This type of error handling can lead to vulnerabilites due allowing the program to continue executing in a unknown erroneous state, hence the "catch all".  Software is exploited by forcing the program to execute in a state not intended.  Additionally, catch all statements indicate bad error handling architecture and should be refactored to ensure the program handles errors such that it fails to a secure state.</Description>
+      <Positive>false</Positive>
+      <Files />
+      <Patterns>
+        <string>catch[ ]*\(\.\.\.\)</string>
+      </Patterns>
+      <FileExtensions>
+        <string>.c</string>
+        <string>.cpp</string>
+        <string>.h</string>
+        <string>.H</string>
+        <string>.C</string>
+      </FileExtensions>
+    </ScanConfig>
+    <ScanConfig>
+      <Name>dangerous gets function</Name>
+      <Type>INDICATOR</Type>
+      <Risk>Moderate</Risk>
+      <Description>It's just too easy to get code wrong that uses these outdated functions and these types of errors lead to vulnerabilities. Even some of the classic replacement functions are prone to error too.
+
+These functions can lead to buffer overruns (24 Deadly Sins of Software Development; Howard, LeBlanc, and Viega 2009). Existing code must either replace the banned function with a more secure version or be re-architected so that the banned function is not used.
+
+If unable to remove the function or use a more secure function then ensure the function arguments have been validated and thouroughly tested.</Description>
+      <Positive>false</Positive>
+      <Files />
+      <Patterns>
+        <string>gets\(</string>
+        <string>_getts\(</string>
+        <string>_gettws\(</string>
+      </Patterns>
+      <FileExtensions>
+        <string>.c</string>
+        <string>.cpp</string>
+        <string>.h</string>
+        <string>.H</string>
+        <string>.C</string>
+      </FileExtensions>
+    </ScanConfig>
+    <ScanConfig>
+      <Name>dangerous integer function</Name>
+      <Type>INDICATOR</Type>
+      <Risk>Moderate</Risk>
+      <Description>It's just too easy to get code wrong that uses these outdated functions and these types of errors lead to vulnerabilities. Even some of the classic replacement functions are prone to error too.
+
+These functions can lead to buffer overruns (24 Deadly Sins of Software Development; Howard, LeBlanc, and Viega 2009). Existing code must either replace the banned function with a more secure version or be re-architected so that the banned function is not used.
+
+If unable to remove the function or use a more secure function then ensure the function arguments have been validated and thouroughly tested.</Description>
+      <Positive>false</Positive>
+      <Files />
+      <Patterns>
+        <string>_itoa</string>
+        <string>_itow</string>
+        <string>_i64toa</string>
+        <string>_i64tow</string>
+        <string>_ui64toa</string>
+        <string>_ui64tot</string>
+        <string>_ui64tow</string>
+        <string>_ultoa</string>
+        <string>_ultot</string>
+        <string>_ultow</string>
+      </Patterns>
+      <FileExtensions>
+        <string>.c</string>
+        <string>.cpp</string>
+        <string>.h</string>
+        <string>.H</string>
+        <string>.C</string>
+      </FileExtensions>
+    </ScanConfig>
+    <ScanConfig>
+      <Name>dangerous print function</Name>
+      <Type>INDICATOR</Type>
+      <Risk>Moderate</Risk>
+      <Description>It's just too easy to get code wrong that uses these outdated functions and these types of errors lead to vulnerabilities. Even some of the classic replacement functions are prone to error too.
+
+These functions can lead to buffer overruns (24 Deadly Sins of Software Development; Howard, LeBlanc, and Viega 2009). Existing code must either replace the banned function with a more secure version or be re-architected so that the banned function is not used.
+
+If unable to remove the function or use a more secure function then ensure the function arguments have been validated and thouroughly tested.</Description>
+      <Positive>false</Positive>
+      <Files />
+      <Patterns>
+        <string>sprintfW</string>
+        <string>sprintfA</string>
+        <string>wsprintf</string>
+        <string>wsprintfW</string>
+        <string>wsprintfA</string>
+        <string>sprintf</string>
+        <string>swprintf</string>
+        <string>_stprintf</string>
+        <string>wvsprintf</string>
+        <string>wvsprintfA</string>
+        <string>wvsprintfW</string>
+        <string>vsprintf</string>
+        <string>_vstprintf</string>
+        <string>vswprintf</string>
+      </Patterns>
+      <FileExtensions>
+        <string>.c</string>
+        <string>.cpp</string>
+        <string>.C</string>
+        <string>.h</string>
+        <string>.H</string>
+      </FileExtensions>
+    </ScanConfig>
+    <ScanConfig>
+      <Name>dangerous memory function</Name>
+      <Type>INDICATOR</Type>
+      <Risk>Moderate</Risk>
+      <Description>It's just too easy to get code wrong that uses these outdated functions and these types of errors lead to vulnerabilities. Even some of the classic replacement functions are prone to error too.
+
+These functions can lead to buffer overruns (24 Deadly Sins of Software Development; Howard, LeBlanc, and Viega 2009). Existing code must either replace the banned function with a more secure version or be re-architected so that the banned function is not used.
+
+If unable to remove the function or use a more secure function then ensure the function arguments have been validated and thouroughly tested.</Description>
+      <Positive>false</Positive>
+      <Files />
+      <Patterns>
+        <string>alloca\(</string>
+        <string>memcpy\(</string>
+        <string>wmemcpy\(</string>
+      </Patterns>
+      <FileExtensions>
+        <string>.c</string>
+        <string>.cpp</string>
+        <string>.h</string>
+        <string>.H</string>
+        <string>.C</string>
+      </FileExtensions>
+    </ScanConfig>
+  </ScanConfigs>
+</ParadigmProject>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScanConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>catch all statements</Name>
+  <Type>CAT II</Type>
+  <Risk>Moderate</Risk>
+  <Description>catch blocks that use a catch all syntax are typically associated with empty actions.  This type of error handling can lead to vulnerabilites due allowing the program to continue executing in a unknown erroneous state, hence the "catch all".  Software is exploited by forcing the program to execute in a state not intended.  Additionally, catch all statements indicate bad error handling architecture and should be refactored to ensure the program handles errors such that it fails to a secure state.</Description>
+  <Positive>false</Positive>
+  <Files />
+  <Patterns>
+    <string>catch[ ]*\(\.\.\.\)</string>
+  </Patterns>
+  <FileExtensions>
+    <string>.c</string>
+    <string>.cpp</string>
+    <string>.h</string>
+    <string>.H</string>
+    <string>.C</string>
+  </FileExtensions>
+</ScanConfig>

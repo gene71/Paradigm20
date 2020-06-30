@@ -1,0 +1,9 @@
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\bin\Release\Paradigm.exe.config
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\bin\Release\Paradigm.exe
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\bin\Release\Paradigm.pdb
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\obj\Release\Paradigm.csprojResolveAssemblyReference.cache
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\obj\Release\Paradigm.Form_main.resources
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\obj\Release\Paradigm.Properties.Resources.resources
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\obj\Release\Paradigm.csproj.GenerateResource.Cache
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\obj\Release\Paradigm.exe
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\obj\Release\Paradigm.pdb

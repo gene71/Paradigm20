@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScanConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>using</Name>
+  <Type>INFORMATIONAL</Type>
+  <Risk>Low</Risk>
+  <Description />
+  <Positive>false</Positive>
+  <Files />
+  <Patterns>
+    <string>using</string>
+  </Patterns>
+  <FileExtensions>
+    <string>.cs</string>
+  </FileExtensions>
+</ScanConfig>

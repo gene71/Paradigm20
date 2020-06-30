@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="theme.css">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+['Status', 'Control'],
+['select', 31],
+['join', 10],
+['na',0]
+]);
+var options = {
+title: 'Overview'
+ };
+var chart = new google.visualization.PieChart(document.getElementById('verpiechart'));
+chart.draw(data, options);
+}
+</script>
+
+</head>
+<body>
+<h1>Paradigm</h1>
+<p>This report provides scan results for the SpaceExon project.</br>
+Scan Time: 10/9/2018 3:39:58 PM</br>
+Name: SpaceExon</br>
+Project Description: This is a sample project used to test the report functions of Paradigm.</br>
+Scan Config Used: linq</br>
+<h2>Summary</h2>
+<table>
+<tr>
+<td><div id="verpiechart" style="width: 400px; height: 300px; "></div></td>
+<td><div id="natpiechart" style="width: 400px; height: 300px; "></div></td>
+<td><div id="tempiechart" style="width: 400px; height: 300px; "></div></td>
+<td><div id="tarpiechart" style="width: 400px; height: 300px; "></div></td>
+</tr>
+</table>
+<hr>
+<h2>Source Detail</h2>
+<table>
+<tr class="toprow">
+<td><h3>Item</h3></td>
+<td><h3>File : Hash</h3></td>
+<td><h3>Line No.</h3></td>
+<td><h3>Line</h3></td>
+ <td><h3>Fix</h3></td>
+</tr>
+<tr>
+<td>1</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\App_Start\BundleConfig.cs : 4EBF1C3D0DEE458B760FEECC4A0B24B9</td>
+<td>28</td>
+<td>            bundles.Add(new ScriptBundle("~/bundles/select2").Include(</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>2</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\App_Start\BundleConfig.cs : 05339730EE59133067CFF6AEDFBD2A40</td>
+<td>29</td>
+<td>                      "~/Scripts/select2.min.js"));</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>3</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\App_Start\BundleConfig.cs : EC4C0D3BFC7A2B7E14C316514C6C1822</td>
+<td>38</td>
+<td>            bundles.Add(new StyleBundle("~/Content/select2").Include(</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>4</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\App_Start\BundleConfig.cs : 2B28B935DA848706E92DF9DDF378F8F6</td>
+<td>39</td>
+<td>                      "~/Content/select2.css"));</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>5</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Controllers\AdminController.cs : A88660D3F5C88A07176C605E55599A1B</td>
+<td>71</td>
+<td>            List<string> selectedPstns = new List<string>();</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>6</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Controllers\AdminController.cs : B1FA8BFACCD9B8DFB26A710757BAE9B3</td>
+<td>73</td>
+<td>            //check which postions are selected</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>7</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Controllers\AdminController.cs : 9E3FDE3270BB931FB369EE0862B7AFC4</td>
+<td>76</td>
+<td>                selectedPstns.Add(ExONConstants.JOB_POS_VP);</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>8</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Controllers\AdminController.cs : 4114B372DBB39700A3D2467028D4C07D</td>
+<td>81</td>
+<td>                selectedPstns.Add(ExONConstants.JOB_POS_DIR);</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>9</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Controllers\AdminController.cs : FB144B8CB0DCE744C41AFEF4DEF3A62E</td>
+<td>86</td>
+<td>                selectedPstns.Add(ExONConstants.JOB_POS_INTERIM_EXEC);</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>10</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Controllers\AdminController.cs : 8C27A3798426FCD794D9E6296241EB25</td>
+<td>103</td>
+<td>                //for each selected position, verify it exists in Exctv_Hire_Rqst_Actn - if not, insert.</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>11</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Controllers\AdminController.cs : 01A93059F8C5DECF7701339DABD239E3</td>
+<td>104</td>
+<td>                foreach (string pstn in selectedPstns)</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>12</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Controllers\AdminController.cs : 01A93059F8C5DECF7701339DABD239E3</td>
+<td>122</td>
+<td>                foreach (string pstn in selectedPstns)</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>13</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Models\ExONModel.Designer.cs : 70D44460C64FD4E53FADA237ED5E701D</td>
+<td>9</td>
+<td>// select 'Update Model from Database...', 'Generate Database from Model...', or 'Add Code Generation</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>14</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Models\ExONModel1.Designer.cs : 70D44460C64FD4E53FADA237ED5E701D</td>
+<td>9</td>
+<td>// select 'Update Model from Database...', 'Generate Database from Model...', or 'Add Code Generation</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>15</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Models\FedClaimsUser.cs : 6AFA9915E9F8061CA45AAD4BF3E7198A</td>
+<td>19</td>
+<td>                        select c.Value).FirstOrDefault();</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>16</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Models\FedClaimsUser.cs : EDB86EC2B6057418B2F394D75390C367</td>
+<td>29</td>
+<td>        //                select c.Value).FirstOrDefault();</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>17</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Models\FedClaimsUser.cs : EDB86EC2B6057418B2F394D75390C367</td>
+<td>40</td>
+<td>        //                select c.Value).FirstOrDefault();</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>18</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : D5E0EF7E4163430E8F7AA7B7E3ED495D</td>
+<td>24</td>
+<td>                            join grp in context.VW_GLBL_Application_Group on app.Application_SID equals grp.Application_SID</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>19</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : 6A5FB008771EAF7CAE61313E143590B4</td>
+<td>25</td>
+<td>                            join user in context.VW_GLBL_Application_Group_User on grp.Application_Group_SID equals user.Application_Group_SID</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>20</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : 7D9B02B8B07F88FB2260ADE06EDFA63E</td>
+<td>36</td>
+<td>                        join grp in context.VW_GLBL_Application_Group on app.Application_SID equals grp.Application_SID</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>21</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : 071974B5578341CC706FAF10EAC87E64</td>
+<td>37</td>
+<td>                        join user in context.VW_GLBL_Application_Group_User on grp.Application_Group_SID equals user.Application_Group_SID</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>22</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : 7D9B02B8B07F88FB2260ADE06EDFA63E</td>
+<td>50</td>
+<td>                        join grp in context.VW_GLBL_Application_Group on app.Application_SID equals grp.Application_SID</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>23</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : 071974B5578341CC706FAF10EAC87E64</td>
+<td>51</td>
+<td>                        join user in context.VW_GLBL_Application_Group_User on grp.Application_Group_SID equals user.Application_Group_SID</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>24</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : 33EE8B822573DAFFC8E2D8379FAB27D4</td>
+<td>52</td>
+<td>                        join employee in context.VW_ELINK_EDW_Prsnnl_Neat_Con_Rpt on user.User_Directory_Group_Name equals employee.Employee_NT_ID</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>25</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : 7D9B02B8B07F88FB2260ADE06EDFA63E</td>
+<td>63</td>
+<td>                        join grp in context.VW_GLBL_Application_Group on app.Application_SID equals grp.Application_SID</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>26</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : 071974B5578341CC706FAF10EAC87E64</td>
+<td>64</td>
+<td>                        join user in context.VW_GLBL_Application_Group_User on grp.Application_Group_SID equals user.Application_Group_SID</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>27</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : 33EE8B822573DAFFC8E2D8379FAB27D4</td>
+<td>65</td>
+<td>                        join employee in context.VW_ELINK_EDW_Prsnnl_Neat_Con_Rpt on user.User_Directory_Group_Name equals employee.Employee_NT_ID</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>28</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : C33A5D4764AA9BCFA949A94DB09282FF</td>
+<td>27</td>
+<td>                            user.User_Directory_Group_Name.ToLower() == ntID.ToLower()) select user).Any();</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>29</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : B2D1E89D7694297C1EED982D15C5BE8B</td>
+<td>41</td>
+<td>                        select user).Any();</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>30</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : 4B703FB1FFEACF4D97197B58C20CF67B</td>
+<td>54</td>
+<td>                        select employee).ToList();</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>31</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : 4B703FB1FFEACF4D97197B58C20CF67B</td>
+<td>67</td>
+<td>                        select employee).ToList();</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>32</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : 560A1B924B5B176C2EE931BD01629BB6</td>
+<td>164</td>
+<td>                         select a).Include("Trckng_Rqst_Actn.Trckng_Rqst_Actn_Stat_Hstry.Rqst_Actn_Stat").Include("Trckng_Rqst_Actn.Exctv_Hire_Rqst_Actn").Include("Trckng_Rqst_Actn.Trckng_Rqst_Actn_Asgnmnt").Include("Trckng_Rqst_Hire_Type");</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>33</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : 37D1A0B853EF6D4E4ACABF4BA2A5E6F8</td>
+<td>193</td>
+<td>                         select a).Include("Trckng_Rqst_Actn.Trckng_Rqst_Actn_Stat_Hstry.Rqst_Actn_Stat").Include("Trckng_Rqst_Actn.Exctv_Hire_Rqst_Actn.Rqst_Actn").Include("Trckng_Rqst_Actn.Trckng_Rqst_Actn_Asgnmnt").Include("Trckng_Rqst_Hire_Type");</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>34</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : 1D196C4E97F1B349983D2C38F29AF1F6</td>
+<td>208</td>
+<td>                         select a).Include("Exctv_Hire_Pstn");</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>35</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : 69BB22F46BE8674F4ADDBE1B52D31DD0</td>
+<td>555</td>
+<td>                //if additional Actions were selected on form, add them</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>36</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : A8B893D95CC9B97C14FFC3FA43821201</td>
+<td>716</td>
+<td>                rqsts = (from a in context.Trckng_Rqst.AsNoTracking() select a);</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>37</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Service\EXONDBService.cs : 603299F39701191694286B43F8582254</td>
+<td>733</td>
+<td>                //rqstActns = (from a in context.Trckng_Rqst.AsNoTracking() select a);</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>38</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Utility\EmailUtility.cs : 35786D84D7BEDC7CDE004D47AD1E6D8C</td>
+<td>109</td>
+<td>                IList<RequestAction> selectedActns = actns.Where(a => a.Assignments.Any(b => b.StatusInd == "new" && b.AssigneeID == assigneeID && b.CorpHQInd != "1")).ToList();</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>39</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Utility\EmailUtility.cs : 5608BAF2D235FE36DE69D69B6443D13B</td>
+<td>110</td>
+<td>                if (selectedActns != null && selectedActns.Count > 0)</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>40</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Utility\EmailUtility.cs : 5608BAF2D235FE36DE69D69B6443D13B</td>
+<td>110</td>
+<td>                if (selectedActns != null && selectedActns.Count > 0)</td>
+<td>test description for what to do if found</td>
+</tr>
+<tr>
+<td>41</td>
+<td>C:\Users\mooreel\Documents\AppScan\SpaceExon\Space.ExON\Space.ExON\Space.ExON\Utility\EmailUtility.cs : A025C389C5DE367AC37F02469FB4B0D5</td>
+<td>126</td>
+<td>                        foreach (RequestAction actn in selectedActns)</td>
+<td>test description for what to do if found</td>
+</tr>
+
+</table>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ParadigmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>test proj</Name>
+  <Description>sdfsdf</Description>
+  <ScanConfigs>
+    <ScanConfig>
+      <Name>JavaScript Web 2.0 Keywords and Pointers</Name>
+      <Type>INDICATOR</Type>
+      <Risk>Moderate</Risk>
+      <Description>Ajax and JavaScript have brought functionality back to the client side, which has brought a number of old security issues back to the forefront. The following keywords relate to API calls used to manipulate user state or the control the browser. The event of AJAX and other Web 2.0 paradigms has pushed security concerns back to the client side, but not excluding traditional server side security concerns. 
+</Description>
+      <Positive>false</Positive>
+      <Files />
+      <Patterns>
+        <string>eval( </string>
+        <string>document.cookie </string>
+        <string>document.referrer </string>
+        <string>document.attachEvent </string>
+        <string>document.body </string>
+        <string>document.body.innerHtml </string>
+        <string>document.body.innerText </string>
+        <string>document.close </string>
+        <string>document.create </string>
+        <string>document.createElement </string>
+        <string>document.execCommand </string>
+        <string>document.forms[0].action </string>
+        <string>document.location </string>
+        <string>document.open </string>
+        <string>document.URL </string>
+        <string>document.URLUnencoded </string>
+        <string>document.write </string>
+        <string>document.writeln </string>
+        <string>location.hash </string>
+        <string>location.href </string>
+        <string>location.search </string>
+        <string>window.alert </string>
+        <string>window.attachEvent </string>
+        <string>window.createRequest </string>
+        <string>window.execScript </string>
+        <string>window.location </string>
+        <string>window.open </string>
+        <string>window.navigate </string>
+        <string>window.setInterval </string>
+        <string>window.setTimeout </string>
+        <string>XMLHTTP </string>
+      </Patterns>
+      <FileExtensions>
+        <string>.js</string>
+      </FileExtensions>
+    </ScanConfig>
+    <ScanConfig>
+      <Name>Prototype</Name>
+      <Type>INFORMATIONAL</Type>
+      <Risk>Low</Risk>
+      <Description>test</Description>
+      <Positive>false</Positive>
+      <Files />
+      <Patterns>
+        <string>tst</string>
+      </Patterns>
+      <FileExtensions>
+        <string>.cs</string>
+      </FileExtensions>
+    </ScanConfig>
+  </ScanConfigs>
+</ParadigmProject>

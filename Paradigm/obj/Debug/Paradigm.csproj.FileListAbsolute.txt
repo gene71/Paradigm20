@@ -1,0 +1,18 @@
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\bin\Debug\Paradigm.exe.config
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\bin\Debug\Paradigm.exe
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\bin\Debug\Paradigm.pdb
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\obj\Debug\Paradigm.csprojResolveAssemblyReference.cache
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\obj\Debug\Paradigm.Form_main.resources
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\obj\Debug\Paradigm.Properties.Resources.resources
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\obj\Debug\Paradigm.csproj.GenerateResource.Cache
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\obj\Debug\Paradigm.exe
+C:\Users\mooreel\Documents\Visual Studio 2017\Projects\Paradigm\Paradigm\obj\Debug\Paradigm.pdb
+C:\Users\geo\Downloads\PD-master\PD-master\Paradigm\bin\Debug\Paradigm.exe.config
+C:\Users\geo\Downloads\PD-master\PD-master\Paradigm\bin\Debug\Paradigm.exe
+C:\Users\geo\Downloads\PD-master\PD-master\Paradigm\bin\Debug\Paradigm.pdb
+C:\Users\geo\Downloads\PD-master\PD-master\Paradigm\obj\Debug\Paradigm.csprojAssemblyReference.cache
+C:\Users\geo\Downloads\PD-master\PD-master\Paradigm\obj\Debug\Paradigm.Form_main.resources
+C:\Users\geo\Downloads\PD-master\PD-master\Paradigm\obj\Debug\Paradigm.Properties.Resources.resources
+C:\Users\geo\Downloads\PD-master\PD-master\Paradigm\obj\Debug\Paradigm.csproj.GenerateResource.cache
+C:\Users\geo\Downloads\PD-master\PD-master\Paradigm\obj\Debug\Paradigm.exe
+C:\Users\geo\Downloads\PD-master\PD-master\Paradigm\obj\Debug\Paradigm.pdb
