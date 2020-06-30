@@ -93,7 +93,7 @@ namespace Paradigm.Core
                     catch (Exception ex)
                     {
                         //TODO: add logging
-                        //throw new Exception("Error on FileInfo " + f + " " + ex.Message);
+                        throw new Exception("Error on FileInfo " + f + " " + ex.Message);
                     }
   
 

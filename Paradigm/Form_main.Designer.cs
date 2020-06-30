@@ -34,6 +34,11 @@
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.directoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.directoryContentInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lineCountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.directoryToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.textToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.lineNumbersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip_treeView_ScanDir = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -56,10 +61,6 @@
             this.panel_text_info = new System.Windows.Forms.Panel();
             this.textBox_text_detail = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.lineCountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.directoryToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.textToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel_main_bottom = new Paradigm.Controls.Panel_main();
             this.tabControl_Panel_main_bottom = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -109,7 +110,6 @@
             this.treeView_scanSet = new System.Windows.Forms.TreeView();
             this.tabPage_scan_res = new System.Windows.Forms.TabPage();
             this.treeView_scan_results = new System.Windows.Forms.TreeView();
-            this.directoryContentInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip_main.SuspendLayout();
             this.contextMenuStrip_treeView_ScanDir.SuspendLayout();
             this.contextMenuStrip_nodeHover.SuspendLayout();
@@ -172,6 +172,42 @@
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.viewToolStripMenuItem.Text = "Edit";
+            // 
+            // directoryContentInfoToolStripMenuItem
+            // 
+            this.directoryContentInfoToolStripMenuItem.Name = "directoryContentInfoToolStripMenuItem";
+            this.directoryContentInfoToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.directoryContentInfoToolStripMenuItem.Text = "Directory Content Info";
+            this.directoryContentInfoToolStripMenuItem.Click += new System.EventHandler(this.directoryContentInfoToolStripMenuItem_Click);
+            // 
+            // lineCountToolStripMenuItem
+            // 
+            this.lineCountToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.directoryToolStripMenuItem2,
+            this.fileToolStripMenuItem1,
+            this.textToolStripMenuItem2});
+            this.lineCountToolStripMenuItem.Name = "lineCountToolStripMenuItem";
+            this.lineCountToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.lineCountToolStripMenuItem.Text = "Line Count";
+            // 
+            // directoryToolStripMenuItem2
+            // 
+            this.directoryToolStripMenuItem2.Name = "directoryToolStripMenuItem2";
+            this.directoryToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
+            this.directoryToolStripMenuItem2.Text = "Directory";
+            this.directoryToolStripMenuItem2.Click += new System.EventHandler(this.directoryToolStripMenuItem2_Click);
+            // 
+            // fileToolStripMenuItem1
+            // 
+            this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
+            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
+            this.fileToolStripMenuItem1.Text = "File";
+            // 
+            // textToolStripMenuItem2
+            // 
+            this.textToolStripMenuItem2.Name = "textToolStripMenuItem2";
+            this.textToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
+            this.textToolStripMenuItem2.Text = "Text";
             // 
             // viewToolStripMenuItem1
             // 
@@ -250,21 +286,21 @@
             // textToolStripMenuItem
             // 
             this.textToolStripMenuItem.Name = "textToolStripMenuItem";
-            this.textToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.textToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.textToolStripMenuItem.Text = "Directory";
             this.textToolStripMenuItem.Click += new System.EventHandler(this.textToolStripMenuItem_Click);
             // 
             // textToolStripMenuItem1
             // 
             this.textToolStripMenuItem1.Name = "textToolStripMenuItem1";
-            this.textToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.textToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
             this.textToolStripMenuItem1.Text = "File";
             this.textToolStripMenuItem1.Click += new System.EventHandler(this.textToolStripMenuItem1_Click);
             // 
             // textToolStripMenuItem_scan_Text
             // 
             this.textToolStripMenuItem_scan_Text.Name = "textToolStripMenuItem_scan_Text";
-            this.textToolStripMenuItem_scan_Text.Size = new System.Drawing.Size(180, 22);
+            this.textToolStripMenuItem_scan_Text.Size = new System.Drawing.Size(122, 22);
             this.textToolStripMenuItem_scan_Text.Text = "Text";
             this.textToolStripMenuItem_scan_Text.Click += new System.EventHandler(this.textToolStripMenuItem_scan_Text_Click);
             // 
@@ -332,35 +368,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // lineCountToolStripMenuItem
-            // 
-            this.lineCountToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.directoryToolStripMenuItem2,
-            this.fileToolStripMenuItem1,
-            this.textToolStripMenuItem2});
-            this.lineCountToolStripMenuItem.Name = "lineCountToolStripMenuItem";
-            this.lineCountToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.lineCountToolStripMenuItem.Text = "Line Count";
-            // 
-            // directoryToolStripMenuItem2
-            // 
-            this.directoryToolStripMenuItem2.Name = "directoryToolStripMenuItem2";
-            this.directoryToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.directoryToolStripMenuItem2.Text = "Directory";
-            this.directoryToolStripMenuItem2.Click += new System.EventHandler(this.directoryToolStripMenuItem2_Click);
-            // 
-            // fileToolStripMenuItem1
-            // 
-            this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
-            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.fileToolStripMenuItem1.Text = "File";
-            // 
-            // textToolStripMenuItem2
-            // 
-            this.textToolStripMenuItem2.Name = "textToolStripMenuItem2";
-            this.textToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.textToolStripMenuItem2.Text = "Text";
             // 
             // panel_main_bottom
             // 
@@ -892,13 +899,6 @@
             this.treeView_scan_results.Size = new System.Drawing.Size(251, 491);
             this.treeView_scan_results.TabIndex = 0;
             this.treeView_scan_results.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView_scan_results_NodeMouseDoubleClick);
-            // 
-            // directoryContentInfoToolStripMenuItem
-            // 
-            this.directoryContentInfoToolStripMenuItem.Name = "directoryContentInfoToolStripMenuItem";
-            this.directoryContentInfoToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.directoryContentInfoToolStripMenuItem.Text = "Directory Content Info";
-            this.directoryContentInfoToolStripMenuItem.Click += new System.EventHandler(this.directoryContentInfoToolStripMenuItem_Click);
             // 
             // Form_main
             // 

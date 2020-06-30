@@ -31,7 +31,7 @@ namespace Paradigm.Core.Util
             {
                 throw new ParadigmException(ex.Message);
             }
-            return null;
+            
         }
     }
 }

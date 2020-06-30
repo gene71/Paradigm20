@@ -10,12 +10,12 @@ namespace CTLib
 {
     public class BLReport
     {
-        string webdir = "Web\\";
-        string meetpng = "meets.png";
-        string nomeetpng = "nomeet.png";
-        string partialpng = "partial.png";
+        //string webdir = "Web\\";
+        //string meetpng = "meets.png";
+        //string nomeetpng = "nomeet.png";
+        //string partialpng = "partial.png";
         string filePath = "ParadigmReport.html";
-        string name;
+        //string name;
         ParadigmProject parp;
         List<ScanResults> ws; 
         public BLReport(List<ScanResults> WorkingScans, ParadigmProject pp)
@@ -90,7 +90,7 @@ namespace CTLib
             }
             catch (Exception ex)
             {
-                //throw new CISSATException("error generating report " + ex.Message);
+                throw new Exception("error generating report " + ex.Message);
             }
         }
 
@@ -225,8 +225,8 @@ namespace CTLib
             }
             catch (Exception ex)
             {
-                //throw new CISSATException("error generating verpiechart " + ex.Message);
-                return null;
+                throw new Exception("error generating verpiechart " + ex.Message);
+                
             }
             
         }
@@ -300,8 +300,8 @@ namespace CTLib
             }
             catch (Exception ex)
             {
-                //throw new CISSATException("error generating verpiechart " + ex.Message);
-                return null;
+                throw new Exception("error generating verpiechart " + ex.Message);
+                
             }
         }
         /*
@@ -430,8 +430,8 @@ namespace CTLib
             }
             catch (Exception ex)
             {
-                //throw new CISSATException("error building detail table " + ex.Message);
-                return null;
+                throw new Exception("error building detail table " + ex.Message);
+                
             }
             
         }
