@@ -25,3 +25,4 @@ C:\Users\geo\Source\Repos\Paradigm20\Paradigm\obj\Debug\Paradigm.Properties.Reso
 C:\Users\geo\Source\Repos\Paradigm20\Paradigm\obj\Debug\Paradigm.csproj.GenerateResource.cache
 C:\Users\geo\Source\Repos\Paradigm20\Paradigm\obj\Debug\Paradigm.exe
 C:\Users\geo\Source\Repos\Paradigm20\Paradigm\obj\Debug\Paradigm.pdb
+C:\Users\geo\Source\Repos\Paradigm20\Paradigm\obj\Debug\Paradigm.csproj.CoreCompileInputs.cache

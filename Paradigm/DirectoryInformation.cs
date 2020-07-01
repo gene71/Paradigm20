@@ -1,4 +1,6 @@
-﻿using Paradigm.Core.Util;
+﻿using Paradigm.Core;
+using Paradigm.Core.Model;
+using Paradigm.Core.Util;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,6 +16,7 @@ namespace Paradigm
     public class DirectoryInformation
     {
         string directory;
+       
 
 
         public DirectoryInformation(string directory)
@@ -75,6 +78,47 @@ namespace Paradigm
             }
 
                 return extensions;
+        }
+
+        public int GetSLOC()
+        {
+            string ed = Environment.CurrentDirectory;
+            ParaObjSerializer po = new ParaObjSerializer();
+            ScanConfig sc = po.LoadScanConfig(ed + @"\ParaData\ScanConfigs\defaultExtensions.xml");
+            
+            //add files
+            FileUtil fu = new FileUtil();
+            List<string> files = fu.GetFiles(directory);
+
+            //add only default code file extensions to list
+            List<string> codeFiles = new List<string>();
+            foreach (var path in files)
+            {
+                FileInfo fi = new FileInfo(path);
+                foreach(var codeExt in sc.FileExtensions)
+                {
+                    if(fi.Extension == codeExt)
+                    {
+                        codeFiles.Add(path);
+                    }
+                }
+            }
+            
+            int i = 0;
+
+            foreach (var codeFilepath in codeFiles)
+            {
+                List<string> lines = new List<string>();
+                            
+                foreach (var line in File.ReadAllLines(codeFilepath))
+                {
+                    i++;
+                }
+            }
+
+            return i;
+
+           
         }
 
 

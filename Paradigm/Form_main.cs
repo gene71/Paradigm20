@@ -929,9 +929,11 @@ namespace Paradigm
                 sb.Append(ext + ", ");
             }
             sb.AppendLine();
-
+            sb.Append("SLOC: " + di.GetSLOC());
             richTextBox_main.Text = sb.ToString();
 
         }
+
+        
     }
 }

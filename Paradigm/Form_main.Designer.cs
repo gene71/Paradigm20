@@ -286,21 +286,21 @@
             // textToolStripMenuItem
             // 
             this.textToolStripMenuItem.Name = "textToolStripMenuItem";
-            this.textToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.textToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.textToolStripMenuItem.Text = "Directory";
             this.textToolStripMenuItem.Click += new System.EventHandler(this.textToolStripMenuItem_Click);
             // 
             // textToolStripMenuItem1
             // 
             this.textToolStripMenuItem1.Name = "textToolStripMenuItem1";
-            this.textToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
+            this.textToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.textToolStripMenuItem1.Text = "File";
             this.textToolStripMenuItem1.Click += new System.EventHandler(this.textToolStripMenuItem1_Click);
             // 
             // textToolStripMenuItem_scan_Text
             // 
             this.textToolStripMenuItem_scan_Text.Name = "textToolStripMenuItem_scan_Text";
-            this.textToolStripMenuItem_scan_Text.Size = new System.Drawing.Size(122, 22);
+            this.textToolStripMenuItem_scan_Text.Size = new System.Drawing.Size(180, 22);
             this.textToolStripMenuItem_scan_Text.Text = "Text";
             this.textToolStripMenuItem_scan_Text.Click += new System.EventHandler(this.textToolStripMenuItem_scan_Text_Click);
             // 
