@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScanConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Default Extensions</Name>
+  <Description>Default file extenstions used to determine lines of code</Description>
+  <Positive>false</Positive>
+  <Files />
+  <Patterns>
+    <string>//.+</string>
+    <string>/\*</string>
+    <string>\*\/</string>
+  </Patterns>
+  <FileExtensions>
+    <string>.c</string>
+    <string>.h</string>
+    <string>.C</string>
+    <string>.H</string>
+    <string>.cpp</string>
+    <string>.cc</string>
+    <string>.CC</string>
+    <string>.CPP</string>
+    <string>.java</string>
+    <string>.cs</string>
+    <string>.py</string>
+  </FileExtensions>
+</ScanConfig>

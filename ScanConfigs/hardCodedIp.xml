@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScanConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Hard coded IP address</Name>
+  <Type>INDICATOR</Type>
+  <Risk>Low</Risk>
+  <Description>As a best practice do not hard code configuration data, especially sensitive data which could lead to information disclosure.</Description>
+  <Positive>false</Positive>
+  <Files />
+  <Patterns>
+    <string>\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b</string>   
+  </Patterns>
+  <FileExtensions>
+    <string>.cpp</string>
+    <string>.c</string>
+    <string>.cc</string>
+    <string>.CC</string>
+    <string>.C</string>
+    <string>.h</string>
+    <string>.H</string>
+    <string>.java</string>    
+  </FileExtensions>
+</ScanConfig>

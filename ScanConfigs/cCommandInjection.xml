@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScanConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>C/C++ Command Injection</Name>
+  <Type>INDICATOR</Type>
+  <Risk>Low</Risk>
+  <Description>Always ensure input to process exectuion is validated.  Many times process and commands are sent directly to the OS without proper input validation.</Description>
+  <Positive>false</Positive>
+  <Files />
+  <Patterns>
+    <string>syscall\(.+\)</string>
+    <string>\.system\(.+\)</string>
+    <string>\.execl\(.+\)</string>
+    <string>\.execv\(.+\)</string> 
+    <string>\.execle\(.+\)</string> 
+    <string>\.execve\(.+\)</string> 
+    <string>\.execlp\(.+\)</string>
+    <string>\.execvp\(.+\)</string>
+    <string>\.execl\([A-z0-9]+\)</string>
+    <string>\.execv\([A-z0-9]+\)</string> 
+    <string>\.execle\([A-z0-9]+\)</string> 
+    <string>\.execve\([A-z0-9]+\)</string> 
+    <string>\.execlp\([A-z0-9]+\)</string>
+    <string>\.execvp\([A-z0-9]+\)</string>  
+  </Patterns>
+  <FileExtensions>
+    <string>.cpp</string>
+    <string>.c</string>
+    <string>.CPP</string>
+    <string>.cc</string>
+    <string>.CC</string>
+    <string>.C</string>
+    <string>.h</string>
+    <string>.H</string>
+  </FileExtensions>
+</ScanConfig>

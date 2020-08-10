@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScanConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Hard Coded Sensitive Data</Name>
+  <Type>INDICATOR</Type>
+  <Risk>Low</Risk>
+  <Description>As a best practice do not hard code configuration data, especially sensitive data which could lead to information disclosure. Always scrub sensitive config data before release and use appropriate data protection when storing at rest or transit.</Description>
+  <Positive>false</Positive>
+  <Files />
+  <Patterns>
+    <string>\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b</string>
+    <string>[Pp][Aa@][SsWw]{1,2}[Dd]*[ ]+=</string>   
+    <string>[Aa][Dd][Mm][Ii][Nn][Ii][Ss][Tt][Rr][Aa][Tt][Oo][Rr]</string>   
+    <string>[Aa][Dd][Mm][IiNn]+</string>
+    <string>[Pp][Ww][Dd]</string>       
+  </Patterns>
+  <FileExtensions>
+    <string>.cpp</string>
+    <string>.c</string>
+    <string>.cc</string>
+    <string>.CC</string>
+    <string>.C</string>
+    <string>.h</string>
+    <string>.H</string>
+    <string>.java</string>
+    <string>.properties</string>
+    <string>.conf</string>
+    <string>.config</string>
+    <string>.xml</string>
+    <string>.txt</string>    
+  </FileExtensions>
+</ScanConfig>

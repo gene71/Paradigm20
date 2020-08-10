@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScanConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Java Command Injection</Name>
+  <Type>INDICATOR</Type>
+  <Risk>Low</Risk>
+  <Description>Always ensure input to process exectuion is validated.  Many times process and commands are sent directly to the OS without proper input validation.</Description>
+  <Positive>false</Positive>
+  <Files />
+  <Patterns>
+    <string>ProcessBuilder</string>
+    <string>\.command\(.+\)</string>
+    <string>\.exec\(.+\)</string> 
+    <string>\.exec\([A-z0-9]+\)</string>    
+  </Patterns>
+  <FileExtensions>
+    <string>.java</string>       
+  </FileExtensions>
+</ScanConfig>
